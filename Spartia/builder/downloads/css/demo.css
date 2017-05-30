@@ -7,7 +7,7 @@
   src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
-*, *:after, *:before {
+*:not(.drag-element), *:after, *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 	transition: all .5s;
@@ -305,7 +305,7 @@ button:focus {
 }
 
 .mockup-blockquote p::before {
-  content: '“';
+  content: '\201C';
   font-family: serif;
   font-size: 3em;
   line-height: 0;
@@ -411,13 +411,11 @@ button:focus {
   background: #A8A8A9;
   color: #fff;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 0.85em;
   padding: 1.5em 2.5em;
   margin: 20px 0;
-  white-space: nowrap;
 }
 
 .mockup-button .fa {
