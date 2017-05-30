@@ -24,10 +24,10 @@
 
 body {
   background: #525252;
+  color: #fff;
   font-weight: 500;
   font-size: 1em;
   font-family: 'Raleway', Arial, sans-serif;
-  color: #7B7B7F;
 }
 
 * {
@@ -908,7 +908,7 @@ button:focus {
 }
 
 img.changeable {
-  position: relative !important;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -968,4 +968,18 @@ img.changeable {
   color: #aaa;
   border-style: solid;
   border-color: white;
+}
+
+.changeable.wide {
+  transform: translate(-50%,-50%);
+  position: relative;
+  left: 50%;
+  width: 100%;
+}
+
+.changeable.tall {
+  transform: translate(-50%);
+  position: relative;
+  left: 50%;
+  height: 350px;
 }
