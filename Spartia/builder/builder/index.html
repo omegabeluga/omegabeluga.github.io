@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interactive Coloring Concept</title>
+	<meta name="description" content="A fun interactive coloring concept for changing colors on a mockup website" />
+	<meta name="keywords" content="coloring, drag and drop, svg, material design, mockup, website" />
+	<meta name="author" content="Codrops" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/spectrum.css" />
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<script src="js/modernizr.custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.min.js"></script>
+	<script src="js/jszip.min.js"></script>
+	<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header class="codrops-header">
+			<h1>Spartia Builder<span>by Omega Beluga</span></h1>
+			<button class="download">Download your site</button>
+			<input placeholder="Enter your email address for contact button..." class="email">
+		</header>
+		<div class="content">
+			<div class="mockup-browser">
+				<header class="mockup-header mockup-section--dark paint-area">
+					<div class="mockup-content mockup-grid mockup-grid--spread">
+						<span class="mockup-logo paint-area paint-area--text">
+								<span contenteditable class="mainTitle">Column Spring</span>
+						</span>
+						<nav class="mockup-nav paint-area paint-area--text" style="color: #7B7B7F;">
+							<a href="#about"><span contenteditable>About</span></a>
+							<a href="" class="contact"><span>Contact</span></a>
+						</nav>
+					</div>
+				</header>
+				<section class="mockup-section paint-area">
+					<div class="mockup-content mockup-grid">
+						<div class="mockup-grid__item mockup-width--half">
+							<h1 class="mockup-heading mockup-heading--large paint-area paint-area--text"><span contenteditable>Interesting Heading</span>
+							<span contenteditable class="mockup-heading__subline paint-area paint-area--text">Subtitle</span></h1>
+						</button>
+						</div>
+						<figure class="mockup-grid__item mockup-width--half">
+							<div class="mockup-img mockup-img--large">
+								<img class="changeable" src="http://placehold.it/300x300">
+							</div>
+						</figure>
+					</div>
+					<!-- /mockup-grid -->
+				</section>
+				<hr class="break">
+				<section class="mockup-section mockup-section--dark newSection">
+					<div class=mockup-content>
+						<button class="add">Add Section</button>
+					</div>
+				</section>
+			</div>
+			<!-- /mockup-browser -->
+		</div>
+		<!-- /content -->
+		<div class="customizer">
+			<ul class="color-tool">
+				<li class="color-1">
+					<div class="drag-element" data-color="black">
+						<div class="drop color-1"></div><i class="drop-helper-1 color-1"></i><i class="drop-helper-2 color-1"></i><i class="drop-helper-3 color-1"></i><i class="drop-helper-4 color-1"></i></div>
+				</li>
+				<li class="color-2">
+					<div class="drag-element" data-color="white">
+						<div class="drop color-2"></div><i class="drop-helper-1 color-2"></i><i class="drop-helper-2 color-2"></i><i class="drop-helper-3 color-2"></i><i class="drop-helper-4 color-2"></i></div>
+				</li>
+				<li class="color-9">
+					<div class="drag-element" data-color="#663300">
+						<div class="drop color-9"></div><i class="drop-helper-1 color-9"></i><i class="drop-helper-2 color-2"></i><i class="drop-helper-3 color-2"></i><i class="drop-helper-4 color-9"></i></div>
+				</li>
+				<li class="color-3">
+					<div class="drag-element" data-color="#C93756">
+						<div class="drop color-3"></div><i class="drop-helper-1 color-3"></i><i class="drop-helper-2 color-3"></i><i class="drop-helper-3 color-3"></i><i class="drop-helper-4 color-3"></i></div>
+				</li>
+				<li class="color-4">
+					<div class="drag-element" data-color="#E08A1E">
+						<div class="drop color-4"></div><i class="drop-helper-1 color-4"></i><i class="drop-helper-2 color-4"></i><i class="drop-helper-3 color-4"></i><i class="drop-helper-4 color-4"></i></div>
+				</li>
+				<li class="color-5">
+					<div class="drag-element" data-color="#F4D03F">
+						<div class="drop color-5"></div><i class="drop-helper-1 color-5"></i><i class="drop-helper-2 color-5"></i><i class="drop-helper-3 color-5"></i><i class="drop-helper-4 color-5"></i></div>
+				</li>
+				<li class="color-6">
+					<div class="drag-element" data-color="#26A65B">
+						<div class="drop color-6"></div><i class="drop-helper-1 color-6"></i><i class="drop-helper-2 color-6"></i><i class="drop-helper-3 color-6"></i><i class="drop-helper-4 color-6"></i></div>
+				</li>
+				<li class="color-7">
+					<div class="drag-element" data-color="#4B77BE">
+						<div class="drop color-7"></div><i class="drop-helper-1 color-7"></i><i class="drop-helper-2 color-7"></i><i class="drop-helper-3 color-7"></i><i class="drop-helper-4 color-7"></i></div>
+				</li>
+				<li class="color-8">
+					<div class="drag-element" data-color="#8E44AD">
+						<div class="drop color-8"></div><i class="drop-helper-1 color-8"></i><i class="drop-helper-2 color-8"></i><i class="drop-helper-3 color-8"></i><i class="drop-helper-4 color-8"></i>
+					</div>
+				</li>
+				<li class="color-10">
+					<div class="drag-element change" data-color="#00ff00">
+						<input type='text' id="full" />
+						<div class="drop"></div><i class="drop-helper-1"></i><i class="drop-helper-2"></i><i class="drop-helper-3"></i><i class="drop-helper-4"></i>
+					</div>
+				</li>
+				<li><button class="reset-button" title="Reser colors">Reset colors</button></li>
+			</ul>
+		</div>
+		<div class="info-wrap">
+			<div class="info">
+				<h3>Welcome to <b>Spartia Builder</b></h3>
+				<p><img src="img/drag.svg" alt="drag icon" />Drag any color from the left toolbar to an area or text in the mockup. A blue outline will indicate a droppable element.</p>
+				<p><img src="img/time.svg" alt="drag icon" />If you're on your phone, wait a bit for the color to appear.</p>
+				<button class="info-close">Got it!</button>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="imgDialog">
+		<h3>Choose Image</h3>
+		<div class="grid">
+			<div class="col-md-12">
+				<input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1 btn btn-simple" data-multiple-caption="{count} files selected" multiple="">
+			</div>
+		</div>
+	</div>
+	<div class="addDialog">
+		<h3>Choose Section</h3>
+		<div class="grid">
+			<div class="grid__col--1-of-5">
+				<button class="sectionPart" data-comp="quotation">Quote</button>
+			</div>
+			<div class="grid__col--1-of-5">
+				<button class="sectionPart" data-comp="links">Useful Links</button>
+			</div>
+			<div class="grid__col--1-of-5">
+				<button class="sectionPart" data-comp="simpleText">Text Component</button>
+			</div>
+			<div class="grid__col--1-of-5">
+				<button class="sectionPart" data-comp="gallery1">Gallery 1</button>
+			</div>
+			<div class="grid__col--1-of-5">
+				<button class="sectionPart" data-comp="gallery2">Gallery 2</button>
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/spectrum.js"></script>
+	<script src="js/main2.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/interact-1.2.4.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
